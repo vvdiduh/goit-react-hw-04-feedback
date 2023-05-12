@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import './FeedbackOptions.styled';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+  // console.log(Object.keys(options));
   const elements = Object.keys(options).map((option, index) => (
     <li key={index}>
       <button onClick={() => onLeaveFeedback(option)}>{option}</button>
